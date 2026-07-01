@@ -49,13 +49,13 @@ export default function App() {
   const [notificationLogs, setNotificationLogs] = useState<NotifikasiLog[]>([]);
   const [config, setConfig] = useState<AppConfig>({
     sheetUrl: "",
-    namaSekolah: "SMA Nusantara Mandiri",
-    alamatSekolah: "Jl. Diponegoro No. 45, Coblong, Kota Bandung, Jawa Barat",
-    teleponSekolah: "(022) 250-1234",
-    penerimaDefault: "Alya Safitri (Bendahara)",
-    namaBank: "Bank Syariah Indonesia (BSI)",
+    namaSekolah: "SMAN Unggul Pidie Jaya",
+    alamatSekolah: "Jl. Blang Awe-Rungkom, Kec. Meureudu, Kab. Pidie Jaya, Aceh",
+    teleponSekolah: "(0821) 6832-1603",
+    penerimaDefault: "Zainal Abidin (Bendahara)",
+    namaBank: "Bank Aceh",
     rekeningBank: "7123456789",
-    pemilikRekening: "Bendahara SMA Nusantara Mandiri"
+    pemilikRekening: "Bendahara SMAN Unggul Pidie Jaya"
   });
 
   const [activeReceipt, setActiveReceipt] = useState<Transaksi | null>(null);
@@ -587,9 +587,9 @@ export default function App() {
     setSetOpenAlamat(config.alamatSekolah);
     setSetOpenTelepon(config.teleponSekolah);
     setSetOpenPenerima(config.penerimaDefault);
-    setSetOpenNamaBank(config.namaBank || "Bank Syariah Indonesia (BSI)");
+    setSetOpenNamaBank(config.namaBank || "Bank Aceh");
     setSetOpenRekeningBank(config.rekeningBank || "7123456789");
-    setSetOpenPemilikRekening(config.pemilikRekening || "Bendahara SMA Nusantara Mandiri");
+    setSetOpenPemilikRekening(config.pemilikRekening || "Bendahara SMAN Unggul Pidie Jaya");
     setSetOpenMerchantId(config.merchantId || "");
     setSetOpenLogo(config.logoSekolah || "");
     
@@ -870,7 +870,7 @@ export default function App() {
 
           {/* Quick Footer inside desktop sidebar */}
           <div className={`hidden md:block pt-4 border-t px-3 text-[10px] font-sans leading-relaxed transition-colors ${isDark ? "border-white/10 text-slate-400" : "border-slate-200 text-slate-500"}`}>
-            <p className={`font-semibold ${isDark ? "text-slate-300" : "text-slate-800"}`}>SMA Nusantara Mandiri v1.0</p>
+            <p className={`font-semibold ${isDark ? "text-slate-300" : "text-slate-800"}`}>SMAN Unggul Pidie Jaya v1.0</p>
             <p className="mt-0.5">Sistem Kasir Offline-First Terintegrasi Google Sheet.</p>
           </div>
 
@@ -1108,7 +1108,7 @@ export default function App() {
                     <input
                       type="text"
                       required
-                      placeholder="Contoh: SMA Nusantara Mandiri"
+                      placeholder="Contoh: SMAN Unggul Pidie Jaya"
                       value={setOpenPemilikRekening}
                       onChange={(e) => setSetOpenPemilikRekening(e.target.value)}
                       className="w-full px-3.5 py-2.5 bg-white/5 border border-white/10 text-white font-semibold rounded-xl text-xs focus:ring-blue-400 focus:bg-slate-900/65 focus:outline-none focus:ring-2 focus:border-transparent"
