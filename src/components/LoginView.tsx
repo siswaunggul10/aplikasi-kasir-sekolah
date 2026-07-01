@@ -57,7 +57,7 @@ export default function LoginView({ onLoginSuccess, config, isDark }: LoginViewP
             </div>
           )}
           <h1 className={`text-2xl font-extrabold tracking-tight transition-colors duration-300 ${isDark ? "text-white" : "text-slate-900"}`}>
-            {config.namaSekolah || "SMA Nusantara Mandiri"}
+            {config.namaSekolah || "SMAN Unggul Pidie Jaya"}
           </h1>
           <p className={`text-xs mt-1 font-semibold uppercase tracking-wider transition-colors duration-300 ${isDark ? "text-slate-400" : "text-slate-500"}`}>
             Sistem Kasir Penerimaan & SPP Sekolah
