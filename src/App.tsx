@@ -618,7 +618,7 @@ export default function App() {
     
     // Save authentication overrides
     const finalUser = setOpenUsername.trim() || "admin";
-    const finalPass = setOpenPassword || "admin123";
+    const finalPass = setOpenPassword || "admin123z";
     localStorage.setItem("KAS_SEKOLAH_USER", finalUser);
     localStorage.setItem("KAS_SEKOLAH_PASS", finalPass);
     saveGlobalSettings(updated, finalUser, finalPass);
