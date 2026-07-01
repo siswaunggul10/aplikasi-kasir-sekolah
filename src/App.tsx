@@ -595,7 +595,7 @@ export default function App() {
     
     // Load auth configurations from localStorage (default admin/admin123)
     setSetOpenUsername(localStorage.getItem("KAS_SEKOLAH_USER") || "admin");
-    setSetOpenPassword(localStorage.getItem("KAS_SEKOLAH_PASS") || "admin123");
+    setSetOpenPassword(localStorage.getItem("KAS_SEKOLAH_PASS") || "admin123z");
     
     setSchoolSettingsOpen(true);
   };
